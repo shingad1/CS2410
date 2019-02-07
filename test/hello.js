@@ -1,9 +1,8 @@
-console.log('test/test.js executing');
-
 const chai = require('chai');
 const expect = chai.expect;
 const request = require('superagent');
 const status = require('http-status');
+
 
 const apiRoot = 'http://localhost:3000/';
 
