@@ -8,6 +8,7 @@ const status = require('http-status');
 const apiRoot = 'http://localhost:3000/';
 
 describe('hello API', function(){
+
 it('GET request returns text "Hello, World!".',function(done){
 request.get(apiRoot)
 .end(function(err,res){
