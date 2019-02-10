@@ -33,7 +33,7 @@ describe('messages library', function() {
     };
   }
 
-  //Conncet the messages library to the DB before running the test.
+  //C the messages library to the DB before running the test.
   before(function(done){
     messages = require('../lib/messages.js')(
       config.db.url,
@@ -99,7 +99,7 @@ describe('messages library', function() {
    });
 
   /* 1.3 Remaining CRUD functions */
-  /*
+  
   it('messages.readUsername() reads all messages created by messages.create()' +
      ' by the user with specified username.', function(done){
        const READ_USER_IDX = 0;
@@ -212,10 +212,10 @@ describe('messages library', function() {
          });
        });
    });
-  */
+  
 
   /* 1.4 Data validation */
-  /*
+  
   it('messages.create() fails to create messages given data which is missing ' +
      'username and/or text properties.',function(done){
     var emptyMessage = {};
@@ -279,10 +279,10 @@ describe('messages library', function() {
       });
     });
   });
-  */
+  
 
   /* 1.5 Security */
-  /*
+  
   it('messages passed to messages.create() are sanitized to remove dangerous ' +
      'HTML before being stored',function(done){
     const dangerousHTML = '<script>maliciousCode()</script>';
@@ -346,5 +346,5 @@ describe('messages library', function() {
         });
       });
   });
-  */
+  
 });

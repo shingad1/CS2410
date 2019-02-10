@@ -1,12 +1,14 @@
+console.log('test/test.js executing');
+
 const chai = require('chai');
 const expect = chai.expect;
 const request = require('superagent');
 const status = require('http-status');
 
-
 const apiRoot = 'http://localhost:3000/';
 
 describe('hello API', function(){
+
 it('GET request returns text "Hello, World!".',function(done){
 request.get(apiRoot)
 .end(function(err,res){
