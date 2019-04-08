@@ -7,12 +7,14 @@ use App\Account;
 
 class AccountController extends Controller
 {
-    public function show($id) {
-      $account = Account::find($id);
-      return view('show', array('account' => $account));
-    }
+  public function show($id) {
+    $account = Account::find($id);
+    return view('show', array('account' => $account));
+ }
 
-    public function list() {
-      return view ('list', array('accounts'=>Account::all()));
-    }
+
+ public function lists(){
+   return view('list', array('accounts'=>Account::all()));
+ }
+
 }

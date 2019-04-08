@@ -2,7 +2,7 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model; //its an eloquent model as it extends it
+use Illuminate\Database\Eloquent\Model;
 
 class Account extends Model
 {

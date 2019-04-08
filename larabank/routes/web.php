@@ -11,10 +11,5 @@
 |
 */
 
-
-Route::get('/hello',function(){
- return 'Hello World!';
-});
-
-Route::get('list', 'AccountController@list');
+Route::get('lists', 'AccountController@lists');
 Route::get('show/{id}', 'AccountController@show');

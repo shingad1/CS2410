@@ -15,11 +15,11 @@ class CreateAccountsTable extends Migration
     {
         Schema::create('accounts', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
             $table->string('accountno');
             $table->string('type');
             $table->float('balance');
-            $table->float('interst');
+            $table->float('interest');
+            $table->timestamps();
         });
     }
 
