@@ -11,6 +11,11 @@
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+Route::get('list', 'AnimalController@list');
+Route::get('show/{id}', 'AnimalController@show');
