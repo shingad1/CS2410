@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('list', 'AnimalController@listAll'); //may need to change list here to listAll
+Route::get('show/{id}', 'AnimalController@show');
