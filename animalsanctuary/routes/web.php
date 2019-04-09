@@ -23,3 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //The index page
 Route::get('/', 'PageController@index');
+
+//routing for authentication
+Route::get('display',
+'AnimalController@display')->name('display_animal');
