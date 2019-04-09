@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Gate;
+use App\Animal;
 
 class AnimalController extends Controller {
 
@@ -15,11 +17,11 @@ class AnimalController extends Controller {
       return view('listAll', array('animals'=>Animal::all()));
     }
 
-    public function display() {
-      $animal = App\Animal::all();
-      if(Gate::denies('displayall')) {
+    public function display()  {
+     $animalQuery = Animal::all();
+      if (Gate::denies('displayall')) {
         $animalQuery=$animalQuery->where('id', auth()->user()->id);
-      }
+        }
       return view('/display', array('animals'=>$animalQuery));
-    }
+     }
 }

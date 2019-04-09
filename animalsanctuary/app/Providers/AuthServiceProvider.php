@@ -27,9 +27,9 @@ class AuthServiceProvider extends ServiceProvider
         $this->registerPolicies();
     }
 
-    public function registerPolicies() {
-      Gate::define('displayall', function($user) {
+   public function registerPolicies() {
+   Gate::define('displayall', function ($user) {
         return $user->role;
-      });
+   });
     }
 }
