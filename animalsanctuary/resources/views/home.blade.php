@@ -15,8 +15,6 @@
                     @endif
 
                     You are logged in!
-                    <br>
-                    <a href="{{ route('display_animal') }}" class="btn btn-primary"> Display animals </a>
                 </div>
             </div>
         </div>
