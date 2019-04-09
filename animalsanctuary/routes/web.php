@@ -20,3 +20,6 @@ Route::get('show/{id}', 'AnimalController@show');
 Auth::routes();
 //Assign the home url to the home controller
 Route::get('/home', 'HomeController@index')->name('home');
+
+//The index page
+Route::get('/', 'PageController@index');
