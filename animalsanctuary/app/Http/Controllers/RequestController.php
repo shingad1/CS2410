@@ -55,7 +55,7 @@ class RequestController extends Controller
     }
 
 /**
- * Index the pending requests of the user
+ * Display the pending requests of the user to the admin
  * @return Returns the pending view, given the $adoptionsQuery and $animal
  */
   public function index() {
